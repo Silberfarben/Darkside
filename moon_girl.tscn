@@ -1,0 +1,97 @@
+[gd_scene load_steps=11 format=3 uid="uid://oftt1tatl0h6"]
+
+[ext_resource type="PackedScene" uid="uid://cnsv882ldvrmk" path="res://Assets/moon_girl.glb" id="1_yqyeh"]
+[ext_resource type="Texture2D" uid="uid://kos8jsrdm4xo" path="res://Assets/moons_mouth.png" id="2_qw6ev"]
+[ext_resource type="Texture2D" uid="uid://b4x7w3dyf6qlc" path="res://Assets/kill_me.png" id="3_02fbe"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o7i8v"]
+blend_mode = 3
+cull_mode = 1
+shading_mode = 0
+albedo_color = Color(0, 0, 0, 1)
+grow = true
+grow_amount = 0.05
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yo8og"]
+next_pass = SubResource("StandardMaterial3D_o7i8v")
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0.690196, 0.00392157, 0.968627, 1)
+metallic_specular = 0.0
+roughness = 0.2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fprjt"]
+next_pass = SubResource("StandardMaterial3D_o7i8v")
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0, 0.607843, 0.670588, 1)
+metallic_specular = 0.0
+roughness = 0.2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dbll1"]
+next_pass = SubResource("StandardMaterial3D_o7i8v")
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0.689078, 0.00336068, 0.968762, 1)
+metallic_specular = 0.0
+roughness = 0.2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sqyxi"]
+next_pass = SubResource("StandardMaterial3D_o7i8v")
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0.230052, 0.771456, 1, 1)
+metallic_specular = 0.0
+roughness = 0.2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vissc"]
+next_pass = SubResource("StandardMaterial3D_o7i8v")
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0, 0.607026, 0.669993, 1)
+metallic_specular = 0.0
+roughness = 0.2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c2s21"]
+next_pass = SubResource("StandardMaterial3D_o7i8v")
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0.231373, 0.772549, 1, 1)
+metallic_specular = 0.0
+roughness = 0.2
+
+[node name="moon_girl" instance=ExtResource("1_yqyeh")]
+
+[node name="Torso" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_yo8og")
+
+[node name="Legs" parent="." index="1"]
+surface_material_override/0 = SubResource("StandardMaterial3D_fprjt")
+
+[node name="Arms" parent="." index="2"]
+surface_material_override/0 = SubResource("StandardMaterial3D_dbll1")
+
+[node name="Head" parent="." index="3"]
+surface_material_override/0 = SubResource("StandardMaterial3D_sqyxi")
+
+[node name="Hat" parent="." index="4"]
+surface_material_override/0 = SubResource("StandardMaterial3D_vissc")
+
+[node name="Hands" parent="." index="5"]
+surface_material_override/0 = SubResource("StandardMaterial3D_c2s21")
+
+[node name="Sprite3D" type="Sprite3D" parent="." index="6"]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0.262781, 3.82382, 0.555091)
+cast_shadow = 0
+gi_mode = 0
+texture = ExtResource("2_qw6ev")
+
+[node name="Sprite3D2" type="Sprite3D" parent="." index="7"]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 4.19628, 0.517497)
+texture = ExtResource("3_02fbe")
+
+[node name="Sprite3D3" type="Sprite3D" parent="." index="8"]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.715882, 4.15493, 0.516356)
+gi_mode = 0
+flip_h = true
+texture = ExtResource("3_02fbe")

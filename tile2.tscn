@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bnc17lxeho52o"]
+
+[ext_resource type="Texture2D" uid="uid://mytidd5o22up" path="res://Assets/hedge_reco_n.png" id="1_u3vik"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_y2y2h"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yu47d"]
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0.388235, 0.12549, 0, 1)
+metallic_specular = 0.0
+roughness = 0.2
+normal_enabled = true
+normal_texture = ExtResource("1_u3vik")
+
+[node name="MeshInstance3D" type="MeshInstance3D"]
+mesh = SubResource("PlaneMesh_y2y2h")
+surface_material_override/0 = SubResource("StandardMaterial3D_yu47d")

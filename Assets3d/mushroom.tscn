@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://c5a1p8k8bapjq"]
+
+[ext_resource type="PackedScene" uid="uid://doko7fvaenlaf" path="res://Assets3d/mushroom.glb" id="1_at7ds"]
+[ext_resource type="Texture2D" uid="uid://mytidd5o22up" path="res://Assets/hedge_reco_n.png" id="2_0tnem"]
+[ext_resource type="Material" uid="uid://bjjv6vr20xtvh" path="res://Assets3d/toon.tres" id="2_whu5m"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o7i8v"]
+blend_mode = 3
+cull_mode = 1
+shading_mode = 0
+albedo_color = Color(0, 0, 0, 1)
+grow = true
+grow_amount = 0.05
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w5jih"]
+next_pass = SubResource("StandardMaterial3D_o7i8v")
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0.552941, 0.478431, 0, 1)
+metallic_specular = 0.0
+roughness = 0.1
+normal_scale = -16.0
+normal_texture = ExtResource("2_0tnem")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sngyk"]
+next_pass = SubResource("StandardMaterial3D_o7i8v")
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0, 0.690196, 0.964706, 1)
+metallic_specular = 0.0
+roughness = 0.2
+normal_enabled = true
+normal_scale = 0.5
+normal_texture = ExtResource("2_0tnem")
+
+[node name="mushroom" instance=ExtResource("1_at7ds")]
+
+[node name="capup" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_w5jih")
+
+[node name="capunder" parent="." index="1"]
+surface_material_override/0 = ExtResource("2_whu5m")
+
+[node name="Cylinder" parent="." index="2"]
+surface_material_override/0 = SubResource("StandardMaterial3D_sngyk")

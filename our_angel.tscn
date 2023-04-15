@@ -1,0 +1,60 @@
+[gd_scene load_steps=8 format=3 uid="uid://bxg2k1c4sjc4y"]
+
+[ext_resource type="PackedScene" uid="uid://d1h3ce34bpfxu" path="res://Assets/Our angel.glb" id="1_7etvn"]
+[ext_resource type="Material" uid="uid://c4bmsd83ogida" path="res://Assets3d/toonbloom.tres" id="2_1umrs"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o7i8v"]
+blend_mode = 3
+cull_mode = 1
+shading_mode = 0
+albedo_color = Color(0, 0, 0, 1)
+grow = true
+grow_amount = 0.05
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_misyw"]
+next_pass = SubResource("StandardMaterial3D_o7i8v")
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0.466667, 0.592157, 0.615686, 1)
+metallic_specular = 0.0
+roughness = 0.2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j64ju"]
+next_pass = SubResource("StandardMaterial3D_o7i8v")
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0.466667, 0.592157, 0.615686, 1)
+metallic_specular = 0.0
+roughness = 0.2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q0f27"]
+blend_mode = 3
+cull_mode = 1
+shading_mode = 0
+albedo_color = Color(0.764706, 0, 0.286275, 1)
+grow = true
+grow_amount = 0.05
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ikbr5"]
+next_pass = SubResource("StandardMaterial3D_q0f27")
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0.466667, 0.592157, 0.615686, 1)
+metallic_specular = 0.0
+roughness = 0.2
+
+[node name="Our angel" instance=ExtResource("1_7etvn")]
+
+[node name="Cube" parent="." index="1"]
+transform = Transform3D(0.741888, 0, 0, 0, 1, 0, 0, 0, 1, 0.457503, 1.99981, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_misyw")
+
+[node name="Sphere" parent="." index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.157503, 1.99981, 0)
+surface_material_override/0 = ExtResource("2_1umrs")
+
+[node name="Circle" parent="." index="3"]
+surface_material_override/0 = SubResource("StandardMaterial3D_j64ju")
+
+[node name="Cylinder" parent="." index="4"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ikbr5")
