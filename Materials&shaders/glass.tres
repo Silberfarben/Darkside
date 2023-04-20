@@ -1,0 +1,15 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://di3n1b0eqyfwa"]
+
+[ext_resource type="Texture2D" uid="uid://b6g5jtkl8nd4j" path="res://Assets/TexturesCom_Gore_512_normal.png" id="1_utrod"]
+
+[resource]
+transparency = 1
+blend_mode = 1
+depth_draw_mode = 1
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0.589999, 0.476963, 0.951042, 0.662745)
+metallic_specular = 0.0
+normal_enabled = true
+normal_scale = 0.5
+normal_texture = ExtResource("1_utrod")

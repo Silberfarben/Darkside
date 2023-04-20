@@ -1,0 +1,49 @@
+[gd_scene load_steps=7 format=3 uid="uid://c140bnr0datml"]
+
+[ext_resource type="PackedScene" uid="uid://c01uitqb0k24b" path="res://lamp.glb" id="1_cvuk2"]
+[ext_resource type="Texture2D" uid="uid://b6g5jtkl8nd4j" path="res://Assets/TexturesCom_Gore_512_normal.png" id="2_y4gq5"]
+[ext_resource type="Material" uid="uid://c4bmsd83ogida" path="res://Assets3d/toonbloom.tres" id="3_0lsa1"]
+[ext_resource type="Material" uid="uid://di3n1b0eqyfwa" path="res://Assets3d/glass.tres" id="4_deg2e"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2gj3h"]
+blend_mode = 3
+cull_mode = 1
+shading_mode = 0
+albedo_color = Color(0, 0, 0, 1)
+grow = true
+grow_amount = 0.05
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jaare"]
+next_pass = SubResource("StandardMaterial3D_2gj3h")
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0.545098, 0.745098, 1, 1)
+metallic_specular = 0.0
+roughness = 0.2
+normal_enabled = true
+normal_scale = 0.2
+normal_texture = ExtResource("2_y4gq5")
+
+[node name="lamp" instance=ExtResource("1_cvuk2")]
+
+[node name="Cube" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_jaare")
+
+[node name="Cube001" parent="." index="1"]
+surface_material_override/0 = ExtResource("3_0lsa1")
+
+[node name="Cube002" parent="." index="2"]
+surface_material_override/0 = ExtResource("4_deg2e")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.274067, 0)
+light_color = Color(0.541176, 0.360784, 0, 1)
+light_energy = 12.136
+light_indirect_energy = 2.62
+light_volumetric_fog_energy = 0.0
+light_size = 1.896
+light_specular = 1.47
+shadow_enabled = true
+shadow_bias = 0.333
+shadow_transmittance_bias = 1.166
+shadow_blur = 10.0

@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Dark Side of the Moon (the)"
-run/main_scene="res://Main.tscn"
+run/main_scene="res://scenes/Main.tscn"
 config/features=PackedStringArray("4.0", "Forward Plus")
 boot_splash/bg_color=Color(0.266667, 0.0196078, 0.152941, 1)
 boot_splash/show_image=false
@@ -32,13 +32,14 @@ editor/last/resources=[]
 
 window/size/viewport_width=960
 window/size/viewport_height=540
+window/size/borderless=true
 window/size/window_width_override=1900
 window/size/window_height_override=1060
 window/stretch/mode="viewport"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/zylann.hterrain/plugin.cfg")
+enabled=PackedStringArray()
 
 [input]
 

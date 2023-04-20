@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2023-04-19T21:44:19+10:00
+
+====== Devotions ======
+Created Wednesday 19 April 2023
+
+@gameplay @lore @dev @body @mind @soul 
+
+Devotions are the most important part of [[Classes|class]] selection, they consist of Body, Mind and Soul, each one having different properties.
+During class selection, players can choose one of them, and it will determine their class in conjunction with their choice of [[Dedications|Dedication.]]
+Devotions have a type of animal associated with them. 
+Devotions represent the alingment of their intentions, wether they are athletic, intelligent or soulful. 
+
+[[Devotions:Body|Body]]
+[[Devotions:Mind|Mind]]
+[[+Soul|Soul]]

@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2023-04-19T17:33:23+10:00
+
+====== Classes ======
+Created Wednesday 19 April 2023
+
+@gameplay @root @dev @lore
+
+There are nine playable classes, which NPCs follow closely. Each class plays a role in the world, they are chosen at the beginning of the game by choosing between three [[Devotions]] & [[Dedications|Dedications.]]
+The classes each have an associated **functional class name**, **animal**, and **lore name**.
+They also receive their own skill trees which stem from a single root and branching into three branches with three abilities. 
+The functional names of the classes are based on their chosen [[Devotions|Devotion]] and [[Dedications|Dedication]]
+
+* [[Classes:Body Agility|Body Agility]]
+* [[Classes:Body Cunning|Body Cunning]]
+* [[Classes:Body Willpower|Body Willpower]]
+* [[Classes:Mind Agility|Mind Agility]]
+* [[+Mind Cunning|Mind Cunning]]
+* [[Classes:Mind Willpower|Mind Willpower]]
+* [[Classes:Soul Agility|Soul Agility]]
+* [[Classes:Soul Cunning|Soul Cunning]]
+* [[Classes:Soul Willpower|Soul Willpower]]

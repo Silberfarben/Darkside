@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2023-04-20T12:56:55+10:00
+
+====== Mind ======
+Created Thursday 20 April 2023
+
+@dev @lore @gameplay @mind 
+
+-Mind
+Mind is a devotion that focuses on mental skills, dealing and avoiding damage with planning and intelligence, as well as rationing their resources, being sneaky and avoiding confrontations. 
+Mind is assosiated with insects, and its matching Dedication is [[Dedications:Cunning|Cunning]]
+Mind classes are Rogue classes.

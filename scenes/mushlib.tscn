@@ -1,0 +1,172 @@
+[gd_scene load_steps=18 format=3 uid="uid://btkcgh1l5rd1b"]
+
+[ext_resource type="PackedScene" uid="uid://bw36tl6cqijb2" path="res://mushlib.glb" id="1_whqmq"]
+[ext_resource type="Texture2D" uid="uid://b6g5jtkl8nd4j" path="res://Assets/TexturesCom_Gore_512_normal.png" id="2_3g2rk"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0vx1a"]
+blend_mode = 3
+cull_mode = 1
+shading_mode = 0
+albedo_color = Color(0, 0, 0, 1)
+grow = true
+grow_amount = 0.05
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oc060"]
+next_pass = SubResource("StandardMaterial3D_0vx1a")
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0.662745, 0.529412, 0, 1)
+metallic_specular = 0.0
+roughness = 0.2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fbg3l"]
+blend_mode = 3
+cull_mode = 1
+shading_mode = 0
+albedo_color = Color(0, 0, 0, 1)
+grow = true
+grow_amount = 0.05
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sp67w"]
+next_pass = SubResource("StandardMaterial3D_fbg3l")
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0, 0.639216, 0.498039, 1)
+metallic_specular = 0.0
+roughness = 0.2
+normal_enabled = true
+normal_scale = -0.86
+normal_texture = ExtResource("2_3g2rk")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o7i8v"]
+blend_mode = 3
+cull_mode = 1
+shading_mode = 0
+albedo_color = Color(0, 0, 0, 1)
+grow = true
+grow_amount = 0.05
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oq8ym"]
+next_pass = SubResource("StandardMaterial3D_o7i8v")
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0.662745, 0.529412, 0, 1)
+metallic_specular = 0.0
+roughness = 0.2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o0nli"]
+next_pass = SubResource("StandardMaterial3D_fbg3l")
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0, 0.639216, 0.498039, 1)
+metallic_specular = 0.0
+roughness = 0.2
+normal_enabled = true
+normal_scale = -0.86
+normal_texture = ExtResource("2_3g2rk")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w1gl2"]
+next_pass = SubResource("StandardMaterial3D_fbg3l")
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0, 0.639216, 0.498039, 1)
+metallic_specular = 0.0
+roughness = 0.2
+normal_enabled = true
+normal_scale = -0.86
+normal_texture = ExtResource("2_3g2rk")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5rpbs"]
+blend_mode = 3
+cull_mode = 1
+shading_mode = 0
+albedo_color = Color(0, 0, 0, 1)
+grow = true
+grow_amount = 0.05
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ftauu"]
+next_pass = SubResource("StandardMaterial3D_5rpbs")
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0.662745, 0.529412, 0, 1)
+metallic_specular = 0.0
+roughness = 0.2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mcwal"]
+next_pass = SubResource("StandardMaterial3D_fbg3l")
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0, 0.639216, 0.498039, 1)
+metallic_specular = 0.0
+roughness = 0.2
+normal_enabled = true
+normal_scale = -0.86
+normal_texture = ExtResource("2_3g2rk")
+backlight = Color(0.992157, 0.992157, 0.992157, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_esrra"]
+next_pass = SubResource("StandardMaterial3D_o7i8v")
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0.662745, 0.529412, 0, 1)
+metallic_specular = 0.0
+roughness = 0.2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2gj3h"]
+blend_mode = 3
+cull_mode = 1
+shading_mode = 0
+albedo_color = Color(0, 0, 0, 1)
+grow = true
+grow_amount = 0.05
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fcn1c"]
+next_pass = SubResource("StandardMaterial3D_2gj3h")
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0, 0.639216, 0.498039, 1)
+metallic_specular = 0.0
+roughness = 0.2
+normal_enabled = true
+normal_scale = 0.2
+normal_texture = ExtResource("2_3g2rk")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_inkn4"]
+next_pass = SubResource("StandardMaterial3D_fbg3l")
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0.662745, 0.529412, 0, 1)
+metallic_specular = 0.0
+roughness = 0.2
+
+[node name="mushlib" instance=ExtResource("1_whqmq")]
+
+[node name="cap1" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_oc060")
+
+[node name="stem2" parent="." index="1"]
+surface_material_override/0 = SubResource("StandardMaterial3D_sp67w")
+
+[node name="Cap2" parent="." index="2"]
+surface_material_override/0 = SubResource("StandardMaterial3D_oq8ym")
+
+[node name="stem1" parent="." index="3"]
+surface_material_override/0 = SubResource("StandardMaterial3D_o0nli")
+
+[node name="stem3" parent="." index="4"]
+surface_material_override/0 = SubResource("StandardMaterial3D_w1gl2")
+
+[node name="cap3" parent="." index="5"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ftauu")
+
+[node name="stem4" parent="." index="6"]
+surface_material_override/0 = SubResource("StandardMaterial3D_mcwal")
+
+[node name="Cap4" parent="." index="8"]
+surface_material_override/0 = SubResource("StandardMaterial3D_esrra")
+
+[node name="stem5" parent="." index="9"]
+surface_material_override/0 = SubResource("StandardMaterial3D_fcn1c")
+
+[node name="cap5" parent="." index="10"]
+surface_material_override/0 = SubResource("StandardMaterial3D_inkn4")

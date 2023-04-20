@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2023-04-19T22:02:16+10:00
+
+====== Wednesday 19 Apr 2023 ======
+[*] Comprehensive [[Classes]], [[Devotions]] and [[Dedications]] list
+[ ] Comprehensive [[Classes]], [[Devotions]] and [[Dedications]] pages
+
+
+Set up this Zim notebook. At first I was not keen on it, but I have come to like it in the last hour. I have been messing around on the settings and preferences, it seems really powerful for my own organization. I realized this morning that I should document all my ideas, but I went further and decided I would make a wiki. Zim seems like exactly what I want. Tags, Journal, Wiki, Tasks... This will keep me organized, if it can't then nothing else can. I will write in this journal from now on, every day. 
+
+In terms of the actual game, I fiddled around on the environment a bit, and reorganized all of the folders and resources. Happy with my day.

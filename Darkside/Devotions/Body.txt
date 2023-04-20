@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2023-04-20T12:37:34+10:00
+
+====== Body ======
+Created Thursday 20 April 2023
+
+@dev @lore @gameplay @body 
+
+-Body
+Body is a devotion that focuses on physical skills, dealing damage with physical objects, using melee weapons and being strong and resillient. 
+Body is assosiated with mammals, and its matching Dedication is [[Dedications:Agility|Agility]]
+Body classes are Warrior classes. 

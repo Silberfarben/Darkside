@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://bvyxo62he76s5"]
+
+[ext_resource type="PackedScene" path="res://algaelib.glb" id="1_qhokn"]
+[ext_resource type="Texture2D" path="res://Assets/TexturesCom_Gore_512_normal.png" id="2_atk6v"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fbg3l"]
+blend_mode = 3
+cull_mode = 1
+shading_mode = 0
+albedo_color = Color(0, 0, 0, 1)
+grow = true
+grow_amount = 0.05
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5y1x3"]
+next_pass = SubResource("StandardMaterial3D_fbg3l")
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0.0470588, 0.380392, 0.164706, 1)
+metallic_specular = 0.0
+roughness = 0.2
+normal_enabled = true
+normal_scale = -0.86
+normal_texture = ExtResource("2_atk6v")
+
+[node name="algaelib" instance=ExtResource("1_qhokn")]
+
+[node name="Plane" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5y1x3")
+
+[node name="Plane001" parent="." index="1"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5y1x3")
+
+[node name="Plane002" parent="." index="2"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5y1x3")
+
+[node name="Plane003" parent="." index="3"]
+surface_material_override/0 = SubResource("StandardMaterial3D_5y1x3")

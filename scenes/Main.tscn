@@ -1,0 +1,51 @@
+[gd_scene load_steps=9 format=3 uid="uid://0x6etgprcycw"]
+
+[ext_resource type="PackedScene" uid="uid://c5a1p8k8bapjq" path="res://Assets3d/mushroom.tscn" id="1_06si2"]
+[ext_resource type="PackedScene" uid="uid://dcsnc2ikuvljh" path="res://scenes/Water.tscn" id="1_bjdv2"]
+[ext_resource type="Environment" uid="uid://br3p8mqpw42d6" path="res://Resources/env.tres" id="1_doa0p"]
+[ext_resource type="PackedScene" uid="uid://oftt1tatl0h6" path="res://scenes/moon_girl.tscn" id="1_i3y4y"]
+[ext_resource type="PackedScene" uid="uid://dqfvv76ajwubp" path="res://scenes/algaelib.tscn" id="1_imiou"]
+[ext_resource type="PackedScene" uid="uid://bxg2k1c4sjc4y" path="res://scenes/our_angel.tscn" id="5_t16ij"]
+[ext_resource type="PackedScene" uid="uid://btkcgh1l5rd1b" path="res://scenes/mushlib.tscn" id="6_k0gut"]
+[ext_resource type="PackedScene" uid="uid://c140bnr0datml" path="res://scenes/lamp.tscn" id="8_fwpx4"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="algaelib" parent="." instance=ExtResource("1_imiou")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource("1_doa0p")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.990074, 0.0424514, -0.13398, -0.140103, -0.222578, 0.964796, 0.011136, 0.97399, 0.226316, 0, 4.10381, 9.99533)
+light_energy = 0.693
+light_indirect_energy = 10.0
+light_volumetric_fog_energy = 0.0
+light_angular_distance = 20.0
+shadow_enabled = true
+shadow_bias = 0.0
+
+[node name="moon_girl" parent="." instance=ExtResource("1_i3y4y")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -1.42096, 0, 0)
+visible = false
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.0699933, -0.992469, -0.100529, -0.186916, 0.0859432, -0.978609, 0.979879, 0.0872867, -0.179493, 0.554953, 0.421924, -4.74855)
+fov = 60.3056
+
+[node name="mushroom" parent="." instance=ExtResource("1_06si2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.63681, 0, 0)
+visible = false
+
+[node name="Our angel" parent="." instance=ExtResource("5_t16ij")]
+transform = Transform3D(-0.108555, 0, -0.99409, 0, 1, 0, 0.99409, 0, -0.108555, -0.167777, 1.88297, 5.05176)
+visible = false
+
+[node name="mushlib" parent="." instance=ExtResource("6_k0gut")]
+
+[node name="lamp" parent="." instance=ExtResource("8_fwpx4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.90688, 0.888006)
+visible = false
+
+[node name="Water" parent="." instance=ExtResource("1_bjdv2")]

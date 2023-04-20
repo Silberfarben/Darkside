@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://dcsnc2ikuvljh"]
-
-[ext_resource type="MeshLibrary" uid="uid://cgtps477gq824" path="res://tile1.meshlib" id="1_p3oph"]
-
-[node name="GridMap" type="GridMap"]
-mesh_library = ExtResource("1_p3oph")
-data = {
-"cells": PackedInt32Array(65531, 3, 0)
-}

@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2023-04-20T12:59:13+10:00
+
+====== Soul ======
+Created Thursday 20 April 2023
+
+@dev @lore @gameplay @soul
+
+-Soul
+Soul is a devotion that focuses on metaphysical, dealing damage by concentrating external forces, using spells and being mystical and devout. 
+Soul is assosiated with reptiles, and its matching Dedication is [[Dedications:Willpower|Willpower]].
+Soul classes are Mage classes.

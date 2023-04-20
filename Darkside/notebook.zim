@@ -1,0 +1,33 @@
+[Notebook]
+version=0.4
+name=Darkside
+interwiki=
+home=Home
+icon=~/Pictures/Screenshot from 2023-04-18 17-30-24.png
+document_root=
+short_links=False
+shared=True
+endofline=unix
+disable_trash=False
+default_file_format=zim-wiki
+default_file_extension=.txt
+notebook_layout=files
+
+[SpellPlugin]
+language=English
+
+[TaskListPlugin]
+all_checkboxes=True
+labels=FIXME, TODO
+waiting_labels=Waiting, Planned
+nonactionable_tags=@waiting, @planned
+integrate_with_journal=start
+included_subtrees=
+excluded_subtrees=
+show_pages=True
+use_workweek=False
+
+[JournalPlugin]
+namespace=Journal
+granularity=Day
+
